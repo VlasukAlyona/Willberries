@@ -26,7 +26,7 @@ const getGoods = () => {
     }
 
     const getData = (value, category) => {
-        fetch('/db/db.json')
+        fetch('/Willberries/db/db.json')
             .then((res) => res.json())
             .then((data) => {
                 const array = category ? data.filter((item) => item[category] === value) : data;

@@ -32,7 +32,7 @@ const search = function() {
     }
 
     const getData = (value) => {
-        fetch('/db/db.json')
+        fetch('/Willberries/db/db.json')
             .then((res) => res.json())
             .then((data) => {
                 const array = data.filter(good => {
